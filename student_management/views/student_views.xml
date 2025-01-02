@@ -1,0 +1,39 @@
+<odoo>
+    <!-- Student List View -->
+    <record id="view_student_list" model="ir.ui.view">
+        <field name="name">student.management.list</field>
+        <field name="model">student.management</field>
+        <field name="arch" type="xml">
+            <list    string="Students">
+                <field name="name"/>
+                <field name="age"/>
+                <field name="email"/>
+                <field name="course"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Student Form View -->
+    <record id="view_student_form" model="ir.ui.view">
+        <field name="name">student.management.form</field>
+        <field name="model">student.management</field>
+        <field name="arch" type="xml">
+            <form string="Student Management">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="age"/>
+                        <field name="email"/>
+                        <field name="course"/>
+                        <field name="active"/>
+                    </group>
+                    <footer>
+                        <button name="action_confirm_create" type="object" string="Confirm" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

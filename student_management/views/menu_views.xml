@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <!-- Main Menu -->
+        <menuitem id="management_main_menu" name="Student Management" sequence="10"/>
+
+        <!-- Submenus -->
+        <menuitem id="student_menu" name="Students" parent="management_main_menu" action="action_student_management" sequence="20"/>
+        <menuitem id="course_menu" name="Courses" parent="management_main_menu" action="action_course_management" sequence="30"/>
+    </data>
+</odoo>
